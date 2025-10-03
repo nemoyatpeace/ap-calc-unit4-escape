@@ -106,6 +106,9 @@
         .key-box ul {
             line-height: 1.8;
         }
+        .key-box ol {
+            line-height: 1.8;
+        }
         .example {
             background: #e3f2fd;
             padding: 15px;
@@ -137,26 +140,6 @@
         .hint-content.show {
             display: block;
         }
-        .instructions {
-            background: #e1f5fe;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-        }
-        .instructions h3 {
-            color: #0277bd;
-            margin-top: 0;
-        }
-        .instructions ol {
-            line-height: 1.8;
-        }
-        .note {
-            background: #fff3e0;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            border-left: 4px solid #ff9800;
-        }
         .emoji {
             font-size: 1.3em;
         }
@@ -175,45 +158,37 @@
             <h1><span class="emoji">🚪</span> Room 1: Interpreting the Derivative <span class="emoji">🚪</span></h1>
             <div class="subtitle">AP Calculus Unit 4 Escape Room Challenge</div>
         </div>
-
         <div class="progress">
             <div class="progress-bar" style="width: 0%;">
                 Room 0 of 6 (0%) - Let's Begin!
             </div>
         </div>
-
         <div class="problem-box">
             <h3><span class="emoji">🎯</span> Challenge 1: Understanding Derivatives in Context</h3>
             <p><strong>Subtopic:</strong> Understanding what the derivative represents in real-world contexts</p>
-            
             <p><strong>Problem:</strong></p>
             <p>A water tank is being drained. The volume V (in gallons) of water remaining in the tank after t minutes is given by:</p>
-            
             <div class="math">
                 V(t) = 500 - 8t - 0.5t²
             </div>
             <p style="text-align: center; color: #666;">for 0 ≤ t ≤ 30</p>
-
             <div class="part">
                 <p><strong>(a)</strong> Find V'(t), the rate of change of volume with respect to time.</p>
             </div>
-
             <div class="part">
-                <p><strong>(b)</strong> Evaluate V'(10) and explain what this value represents in the context of the problem. Include proper units. Express your answer as a <strong>positive number</strong> (the rate at which water is leaving).</p>
+                <p><strong>(b)</strong> Evaluate V'(10) and explain what this value represents in the context of the problem. Include proper units. Express your answer as a positive number (the rate at which water is leaving).</p>
             </div>
-
             <div class="part">
                 <p><strong>(c)</strong> At what time t is the water draining at a rate of 15 gallons per minute? Show your work.</p>
             </div>
-
             <button class="hint-button" onclick="document.getElementById('hint1').classList.toggle('show')">💡 Show Hint</button>
             <div id="hint1" class="hint-content">
                 <p><strong>Hint:</strong> Remember that V'(t) represents the rate of change. Since the volume is decreasing, V'(t) will be negative. For part (b), express the rate as a positive number (the magnitude of the rate of drainage).</p>
             </div>
         </div>
-
         <div class="key-box">
             <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
+            <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), and (c) to determine your navigation key.</p>
             <p>Concatenate your answers from parts <strong>(b)</strong> and <strong>(c)</strong> with NO spaces, NO decimal points, NO units:</p>
             <ul>
                 <li>Part (b): The rate as a whole number</li>
@@ -223,31 +198,17 @@
                 <p><strong>Example format:</strong> If part (b) = 12 gallons/min and part (c) = 5 minutes, then your key would be "125"</p>
                 <p>(Note: This is just an example - these are NOT the correct answers!)</p>
             </div>
-        </div>
-
-        <div class="instructions">
-            <h3><span class="emoji">📝</span> Escape Instructions</h3>
-            <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), and (c) to determine your navigation key.</p>
             <ol>
-                <li>Solve part (a) to find the derivative function V'(t)</li>
                 <li>Use part (a) to solve part (b) - express V'(10) as a POSITIVE whole number</li>
                 <li>Use part (a) to solve part (c) - express t as a whole number</li>
                 <li>Concatenate parts (b) and (c) with no spaces: [answer_b][answer_c]</li>
                 <li>Navigate to: <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
             </ol>
         </div>
-
-        <div class="note">
-            <p><span class="emoji">🎮</span> <strong>Student Note:</strong></p>
-            <p>You're solving an escape room! Each page's filename IS the solution to the previous problem. You cannot skip ahead without solving the problem correctly. Work through the calculus carefully and check your algebra.</p>
-            <p><strong>Next:</strong> Navigate to <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code> after solving.</p>
-        </div>
-
         <footer>
             <p><span class="emoji">🧮</span> AP Calculus Unit 4 Escape Room | Room 1 of 6 | Good luck! <span class="emoji">🚀</span></p>
         </footer>
     </div>
-
     <script>
         // Toggle hint visibility
         function toggleHint(id) {
