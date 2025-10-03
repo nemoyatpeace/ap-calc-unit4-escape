@@ -1,22 +1,21 @@
-# Page 3: Optimization - Enclosing a Field
+# Page 3 — Unit 4: Product and Quotient Rules (FRQ)
 
-## Problem
+Subtopic: Differentiation using product/quotient rules with evaluation
 
-A farmer has 240 meters of fencing to enclose a rectangular field and divide it into two smaller rectangles by adding a fence parallel to one side of the rectangle. What dimensions maximize the total area enclosed?
+Problem:
+Given f(x) = (2x^3 − 5x)·(x^2 + 4) and g(x) = (3x − 1)/(x^2 + 1):
+- Compute f′(x) using the Product Rule, then evaluate f′(2).
+- Compute g′(x) using the Quotient Rule, then evaluate g′(1).
+- Your final numeric answer for this page is f′(2) + g′(1).
 
-- Define variables, write the area in terms of one variable
-- Use calculus to find the maximum
-- State the optimal dimensions and the maximum area
+Escape Instructions (URL-based):
+- Round your final value to 4 decimal places.
+- Remove any commas or spaces.
+- Your escape string is that value with a minus sign only if negative.
+- Use the correct answer to navigate to the next page URL: page4.md.
 
-## Instructions
+Confirmation mechanic:
+- If correct, page4.md will load and confirm you solved Page 3.
+- If wrong, you won’t land on the correct next page.
 
-Let A_max be the maximum area in square meters. Your escape code is:
-
-- Round A_max to the nearest whole number
-- Enter that integer to proceed to Page 4
-
----
-
-Escape String Format: Integer area value
-
-Next Page: [page4.md](page4.md)
+Next: Navigate to page4.md after solving.
