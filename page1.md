@@ -1,46 +1,258 @@
-# Page 1 — Unit 4: Interpreting the Derivative in Context (FRQ)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 1: Interpreting Derivatives - AP Calc Escape Room</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        .header h1 {
+            color: #667eea;
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+        }
+        .header .subtitle {
+            color: #764ba2;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .progress {
+            background: #f0f0f0;
+            border-radius: 10px;
+            height: 25px;
+            margin: 20px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .problem-box {
+            background: #f8f9ff;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        .problem-box h3 {
+            color: #667eea;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .problem-box p {
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        .math {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        .part {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+        .part strong {
+            color: #764ba2;
+        }
+        .key-box {
+            background: #fff9e6;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .key-box h3 {
+            color: #ff6f00;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+        .key-box ul {
+            line-height: 1.8;
+        }
+        .example {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #2196f3;
+        }
+        .hint-button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .hint-button:hover {
+            background: #45a049;
+        }
+        .hint-content {
+            display: none;
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .hint-content.show {
+            display: block;
+        }
+        .instructions {
+            background: #e1f5fe;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .instructions h3 {
+            color: #0277bd;
+            margin-top: 0;
+        }
+        .instructions ol {
+            line-height: 1.8;
+        }
+        .note {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .emoji {
+            font-size: 1.3em;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="emoji">🚪</span> Room 1: Interpreting the Derivative <span class="emoji">🚪</span></h1>
+            <div class="subtitle">AP Calculus Unit 4 Escape Room Challenge</div>
+        </div>
 
-**Subtopic:** Understanding what the derivative represents in real-world contexts
+        <div class="progress">
+            <div class="progress-bar" style="width: 0%;">
+                Room 0 of 6 (0%) - Let's Begin!
+            </div>
+        </div>
 
-**Problem:**
+        <div class="problem-box">
+            <h3><span class="emoji">🎯</span> Challenge 1: Understanding Derivatives in Context</h3>
+            <p><strong>Subtopic:</strong> Understanding what the derivative represents in real-world contexts</p>
+            
+            <p><strong>Problem:</strong></p>
+            <p>A water tank is being drained. The volume V (in gallons) of water remaining in the tank after t minutes is given by:</p>
+            
+            <div class="math">
+                V(t) = 500 - 8t - 0.5t²
+            </div>
+            <p style="text-align: center; color: #666;">for 0 ≤ t ≤ 30</p>
 
-A water tank is being drained. The volume V (in gallons) of water remaining in the tank after t minutes is given by:
+            <div class="part">
+                <p><strong>(a)</strong> Find V'(t), the rate of change of volume with respect to time.</p>
+            </div>
 
-V(t) = 500 - 8t - 0.5t²
+            <div class="part">
+                <p><strong>(b)</strong> Evaluate V'(10) and explain what this value represents in the context of the problem. Include proper units. Express your answer as a <strong>positive number</strong> (the rate at which water is leaving).</p>
+            </div>
 
-for 0 ≤ t ≤ 30.
+            <div class="part">
+                <p><strong>(c)</strong> At what time t is the water draining at a rate of 15 gallons per minute? Show your work.</p>
+            </div>
 
-**(a)** Find V'(t), the rate of change of volume with respect to time.
+            <button class="hint-button" onclick="document.getElementById('hint1').classList.toggle('show')">💡 Show Hint</button>
+            <div id="hint1" class="hint-content">
+                <p><strong>Hint:</strong> Remember that V'(t) represents the rate of change. Since the volume is decreasing, V'(t) will be negative. For part (b), express the rate as a positive number (the magnitude of the rate of drainage).</p>
+            </div>
+        </div>
 
-**(b)** Evaluate V'(10) and explain what this value represents in the context of the problem. Include proper units. Express your answer as a positive number (the rate at which water is leaving).
+        <div class="key-box">
+            <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
+            <p>Concatenate your answers from parts <strong>(b)</strong> and <strong>(c)</strong> with NO spaces, NO decimal points, NO units:</p>
+            <ul>
+                <li>Part (b): The rate as a whole number</li>
+                <li>Part (c): The time as a whole number</li>
+            </ul>
+            <div class="example">
+                <p><strong>Example format:</strong> If part (b) = 12 gallons/min and part (c) = 5 minutes, then your key would be "125"</p>
+                <p>(Note: This is just an example - these are NOT the correct answers!)</p>
+            </div>
+        </div>
 
-**(c)** At what time t is the water draining at a rate of 15 gallons per minute? Show your work.
+        <div class="instructions">
+            <h3><span class="emoji">📝</span> Escape Instructions</h3>
+            <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), and (c) to determine your navigation key.</p>
+            <ol>
+                <li>Solve part (a) to find the derivative function V'(t)</li>
+                <li>Use part (a) to solve part (b) - express V'(10) as a POSITIVE whole number</li>
+                <li>Use part (a) to solve part (c) - express t as a whole number</li>
+                <li>Concatenate parts (b) and (c) with no spaces: [answer_b][answer_c]</li>
+                <li>Navigate to: <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
+            </ol>
+        </div>
 
-**Your navigation key:** Concatenate your answers from parts (b) and (c) with NO spaces, NO decimal points, NO units:
-- Part (b): The rate as a whole number (e.g., if 18.0 gal/min, use "18")
-- Part (c): The time as a whole number (e.g., if 7.00 min, use "7")
-- Example format: if part (b) = 18 and part (c) = 7, then the key is "187"
+        <div class="note">
+            <p><span class="emoji">🎮</span> <strong>Student Note:</strong></p>
+            <p>You're solving an escape room! Each page's filename IS the solution to the previous problem. You cannot skip ahead without solving the problem correctly. Work through the calculus carefully and check your algebra.</p>
+            <p><strong>Next:</strong> Navigate to <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code> after solving.</p>
+        </div>
 
----
+        <footer>
+            <p><span class="emoji">🧮</span> AP Calculus Unit 4 Escape Room | Room 1 of 6 | Good luck! <span class="emoji">🚀</span></p>
+        </footer>
+    </div>
 
-## Escape Instructions:
-
-**CRITICAL:** You must solve ALL parts (a), (b), and (c) to determine your navigation key.
-
-1. Solve part (a) to find the derivative function
-2. Use part (a) to solve part (b) - express V'(10) as a POSITIVE whole number
-3. Use part (a) to solve part (c) - express t as a whole number
-4. Concatenate parts (b) and (c) with no spaces: [answer_b][answer_c]
-5. Navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html`
-
-**Example:** If you calculated that V'(10) = 18 gallons/min and t = 7 minutes, your key would be "187"
-
-Then navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/187.html`
-
----
-
-## Student Note:
-
-You're solving an escape room! Each page's filename IS the solution to the previous problem. You cannot skip ahead without solving the problem correctly. Work through the calculus carefully and check your algebra.
-
-**Next:** Navigate to `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html` after solving.
+    <script>
+        // Toggle hint visibility
+        function toggleHint(id) {
+            document.getElementById(id).classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
