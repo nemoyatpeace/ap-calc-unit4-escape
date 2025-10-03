@@ -12,27 +12,35 @@ Suppose the radius is increasing at a constant rate of 0.5 cm per second.
 
 **(a)** Use the chain rule to find dV/dt in terms of r and dr/dt.
 
-**(b)** At the instant when the radius is 6 cm, how fast is the volume increasing? Express your answer in terms of π.
+**(b)** At the instant when the radius is 6 cm, how fast is the volume increasing? Express your answer in terms of π as a coefficient (e.g., "72pi"). 
 
-**(c)** Calculate the numeric value of your answer from part (b) using π ≈ 3.14159. Round to 2 decimal places.
+**(c)** Calculate the numeric value of your answer from part (b) using π ≈ 3.14159. Round to the nearest whole number of cubic cm per second.
 
-**Your final numeric answer for this page is your answer to part (c) in cubic cm per second.**
+**Your navigation key:** Concatenate your answers from parts (b) and (c) with NO spaces:
+- Part (b): The coefficient of π (e.g., if 72π, use "72")
+- Part (c): The numeric value as a whole number (e.g., if 226.19, round to "226")
+- Example format: if part (b) = 72π and part (c) = 226, then the key is "72226"
 
 ---
 
-## Escape Instructions (URL-based):
+## Escape Instructions:
 
-- Round your final value to 2 decimal places.
-- Remove any commas or spaces.
-- Your escape string is that value (no minus sign needed for this problem).
-- To navigate to the next page, simply proceed to page5.md.
+**CRITICAL:** You must solve ALL parts (a), (b), and (c) to determine your navigation key.
 
-**Example:** After solving, navigate to:
-`https://github.com/nemoyatpeace/ap-calc-unit4-escape/blob/main/page5.md`
+1. Solve part (a) to find the related rates formula
+2. Solve part (b) - express dV/dt in the form kπ where k is an integer
+3. Solve part (c) - calculate the numeric value and round to nearest integer
+4. Concatenate parts (b) and (c) with no spaces: [answer_b][answer_c]
+5. Navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html`
 
-## Confirmation Mechanic:
+**Example:** If you calculated dV/dt = 72π ≈ 226 cm³/sec, your key would be "72226"
 
-- If you've solved the problem correctly, page5.md will display the next challenge.
-- **Student Note:** You're solving an escape room! Related rates problems require careful application of the chain rule. Set up your relationships before differentiating.
+Then navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/72226.html`
 
-**Next:** Navigate to page5.md after solving.
+---
+
+## Student Note:
+
+You're solving an escape room! Each page's filename IS the solution to the previous problem. Related rates require careful application of the chain rule.
+
+**Next:** Navigate to `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html` after solving.
