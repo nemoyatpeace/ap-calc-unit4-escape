@@ -1,21 +1,38 @@
-# Page 3 — Unit 4: Product and Quotient Rules (FRQ)
+# Page 3 — Unit 4: Rates of Change in Other Contexts (FRQ)
 
-Subtopic: Differentiation using product/quotient rules with evaluation
+**Subtopic:** Interpreting rates of change in applied contexts (non-motion)
 
-Problem:
-Given f(x) = (2x^3 − 5x)·(x^2 + 4) and g(x) = (3x − 1)/(x^2 + 1):
-- Compute f′(x) using the Product Rule, then evaluate f′(2).
-- Compute g′(x) using the Quotient Rule, then evaluate g′(1).
-- Your final numeric answer for this page is f′(2) + g′(1).
+**Problem:**
 
-Escape Instructions (URL-based):
-- Round your final value to 4 decimal places.
+The temperature T (in degrees Celsius) of a cooling cup of coffee is modeled by:
+
+T(t) = 20 + 60e^(-0.08t)
+
+where t is time in minutes after the coffee was poured.
+
+**(a)** Find T'(t), the rate of change of temperature with respect to time.
+
+**(b)** Evaluate T'(10) and explain what this value represents in the context of the problem. Include proper units.
+
+**(c)** At what time t is the temperature decreasing at a rate of 2 degrees Celsius per minute? Round your answer to 2 decimal places.
+
+**Your final numeric answer for this page is your answer to part (c).**
+
+---
+
+## Escape Instructions (URL-based):
+
+- Round your final value to 2 decimal places.
 - Remove any commas or spaces.
-- Your escape string is that value with a minus sign only if negative.
-- Use the correct answer to navigate to the next page URL: page4.md.
+- Your escape string is that value (no minus sign needed for this problem).
+- To navigate to the next page, simply proceed to page4.md.
 
-Confirmation mechanic:
-- If correct, page4.md will load and confirm you solved Page 3.
-- If wrong, you won’t land on the correct next page.
+**Example:** After solving, navigate to:
+`https://github.com/nemoyatpeace/ap-calc-unit4-escape/blob/main/page4.md`
 
-Next: Navigate to page4.md after solving.
+## Confirmation Mechanic:
+
+- If you've solved the problem correctly, page4.md will display the next challenge.
+- **Student Note:** You're solving an escape room! Each correct answer conceptually unlocks the next page. Work through the calculus carefully and check your algebra.
+
+**Next:** Navigate to page4.md after solving.
