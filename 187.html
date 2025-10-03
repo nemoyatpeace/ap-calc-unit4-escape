@@ -72,7 +72,7 @@
         .progress-fill {
             height: 100%;
             background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
-            width: 33.33%;
+            width: 16.67%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -84,7 +84,7 @@
         
         @keyframes fillProgress {
             0% { width: 0%; }
-            100% { width: 33.33%; }
+            100% { width: 16.67%; }
         }
         
         .content {
@@ -163,44 +163,34 @@
             font-size: 1.2em;
         }
         
-        .key-instructions {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: #fff;
+        .key-box {
+            background: #fff9e6;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
             padding: 25px;
-            border-radius: 15px;
             margin: 30px 0;
         }
         
-        .key-instructions h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .key-box h3 {
+            color: #ff6f00;
+            margin-top: 0;
+            font-size: 1.3em;
         }
         
-        .key-format {
-            background: rgba(255,255,255,0.2);
+        .key-box ul {
+            line-height: 1.8;
+        }
+        
+        .key-box ol {
+            line-height: 1.8;
+        }
+        
+        .example {
+            background: #e3f2fd;
             padding: 15px;
-            border-radius: 10px;
-            margin: 10px 0;
-            font-family: 'Courier New', monospace;
-        }
-        
-        .hint-box {
-            background: #fff3cd;
-            border: 2px solid #ffc107;
-            color: #856404;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        
-        .hint-box strong {
-            color: #856404;
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.2em;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #2196f3;
         }
         
         ul {
@@ -235,7 +225,7 @@
         </div>
         
         <div class="progress-bar">
-            <div class="progress-fill">Room 2 of 6 (33%)</div>
+            <div class="progress-fill">Room 1 of 6 (16.67%)</div>
         </div>
         
         <div class="content">
@@ -251,13 +241,13 @@
                 <h3><span class="emoji">🎯</span> Challenge 2: Position, Velocity, and Acceleration</h3>
                 <p class="problem-text"><strong>Subtopic:</strong> Motion analysis using derivatives</p>
                 <p class="problem-text" style="margin-top: 15px;"><strong>Problem:</strong></p>
-                <p class="problem-text">A particle moves along a horizontal line. Its position (in meters) at time <em>t</em> (in seconds) is given by:</p>
+                <p class="problem-text">A particle moves along a horizontal line. Its position (in meters) at time t (in seconds) is given by:</p>
                 
                 <div class="equation">s(t) = t³ - 6t² + 9t + 2</div>
-                <p class="problem-text">for t ≥ 0.</p>
+                <p class="problem-text" style="text-align: center; color: #666;">for t ≥ 0</p>
                 
                 <div class="part">
-                    <p><strong>(a)</strong> Find the velocity function <em>v(t)</em> and the acceleration function <em>a(t)</em>.</p>
+                    <p><strong>(a)</strong> Find the velocity function v(t) and the acceleration function a(t).</p>
                 </div>
                 
                 <div class="part">
@@ -273,49 +263,39 @@
                 </div>
             </div>
             
-            <div class="key-instructions">
+            <div class="key-box">
                 <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
-                <p>Concatenate your answers from parts (c) and (d) with <strong>NO spaces</strong>:</p>
-                <ul>
-                    <li>Part (c): The acceleration value as a whole number (e.g., if 6, use "6")</li>
-                    <li>Part (d): Write "speedingup" if speeding up, "slowingdown" if slowing down, or "neither" if at rest</li>
-                </ul>
-                <div class="key-format">
-                    <strong>Example format:</strong> If part (c) = 6 and part (d) = speeding up, then the key is: <strong>"6speedingup"</strong>
+                <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), (c), and (d) to determine your navigation key.</p>
+                
+                <div class="example">
+                    <strong>Example format:</strong> If part (c) = 6 and part (d) = speeding up, then your key would be "6speedingup"<br>
+                    (Note: This is just an example - these are NOT the correct answers!)
                 </div>
-            </div>
-            
-            <div class="hint-box">
-                <strong>💡 Hints for Part (d):</strong>
-                <ul>
-                    <li>At t=1: calculate v(1) and a(1)</li>
-                    <li>If v and a have the same sign (both positive OR both negative), particle is <strong>speeding up</strong></li>
-                    <li>If v and a have opposite signs, particle is <strong>slowing down</strong></li>
-                    <li>If v=0, particle is at rest (transitioning)</li>
-                </ul>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <h3 style="color: #667eea; text-align: center; font-size: 1.8em; margin: 30px 0;">📝 Critical Steps</h3>
-            <ol style="color: #2c3e50; font-size: 1.1em; line-height: 2;">
-                <li>Solve part (a) to find v(t) and a(t)</li>
-                <li>Solve part (b) to find when the particle is at rest (you'll need this for part d)</li>
-                <li>Solve part (c) - express a(3) as a whole number</li>
-                <li>Solve part (d) - determine if speeding up or slowing down at t=1</li>
-                <li>Concatenate parts (c) and (d) with no spaces: [answer_c][answer_d]</li>
-                <li>Navigate to: <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
-            </ol>
-            
-            <div style="background: #e8f5e9; border-left: 5px solid #4caf50; padding: 20px; border-radius: 10px; margin-top: 30px; color: #1b5e20;">
-                <p><strong>🎮 Student Note:</strong></p>
-                <p style="margin-top: 10px;">You're solving an escape room! Each page's filename IS the solution to the previous problem. You cannot skip ahead without solving the problem correctly. Work through the calculus systematically.</p>
-                <p style="margin-top: 15px; text-align: center; font-size: 1.2em;"><strong>Next:</strong> Navigate to <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code> after solving.</p>
+                
+                <ol>
+                    <li>Solve part (a) to find v(t) and a(t)</li>
+                    <li>Solve part (b) to find when the particle is at rest (this helps with part d)</li>
+                    <li>Solve part (c) - express a(3) as a positive or negative whole number</li>
+                    <li>Solve part (d) - determine if speeding up or slowing down at t=1
+                        <ul>
+                            <li>Calculate v(1) and a(1)</li>
+                            <li>If v and a have the same sign (both positive OR both negative), particle is <strong>speeding up</strong></li>
+                            <li>If v and a have opposite signs, particle is <strong>slowing down</strong></li>
+                        </ul>
+                    </li>
+                    <li>Concatenate answers from parts (c) and (d) with <strong>NO spaces or units</strong>:
+                        <ul>
+                            <li>Part (c): The acceleration value as a whole number (e.g., if 6, use "6")</li>
+                            <li>Part (d): Write "speedingup" if speeding up, "slowingdown" if slowing down</li>
+                        </ul>
+                    </li>
+                    <li>Navigate to: <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
+                </ol>
             </div>
         </div>
         
         <div class="footer">
-            <p>🧮 AP Calculus Unit 4 Escape Room | Room 2 of 6 | Keep going! 🚀</p>
+            <p><span class="emoji">🧮</span> AP Calculus Unit 4 Escape Room | Room 1 of 6 | Keep going! <span class="emoji">🚀</span></p>
         </div>
     </div>
 </body>
