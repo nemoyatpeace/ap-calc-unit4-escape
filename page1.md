@@ -1,21 +1,39 @@
-# Page 1 — Unit 4: The Chain Rule (FRQ)
+# Page 1 — Unit 4: Interpreting the Derivative in Context (FRQ)
 
-Subtopic: Differentiation using the Chain Rule in context
+**Subtopic:** Understanding what the derivative represents in real-world contexts
 
-Problem:
-A particle moves along a path where y = (3x^2 + 1)^(5/2). At x = 2,
-- Compute dy/dx using the Chain Rule.
-- Evaluate the numeric value at x = 2.
+**Problem:**
 
-Escape Instructions (URL-based):
-- Round your dy/dx value to 4 decimal places.
+A water tank is being drained. The volume V (in gallons) of water remaining in the tank after t minutes is given by:
+
+V(t) = 500 - 8t - 0.5t²
+
+for 0 ≤ t ≤ 30.
+
+**(a)** Find V'(t), the rate of change of volume with respect to time.
+
+**(b)** Evaluate V'(10) and explain what this value represents in the context of the problem. Include proper units.
+
+**(c)** At what time t is the water draining at a rate of 15 gallons per minute? Show your work.
+
+**Your final numeric answer for this page is your answer to part (c) in minutes.**
+
+---
+
+## Escape Instructions (URL-based):
+
+- Round your final value to 2 decimal places.
 - Remove any commas or spaces.
-- Your escape string is that value with a minus sign only if negative.
-- Append it to the repository URL as the next page filename.
-  Example: if your answer is 123.4567, go to page2.md (this page) by entering the URL for page2.md.
+- Your escape string is that value (no minus sign needed for this problem).
+- To navigate to the next page, you simply need to know this value and go to page2.md.
+- The format is: `page2.md` (the next page URL)
 
-Confirmation mechanic:
-- If your answer is correct, the next page (page2.md) will load successfully and confirm you solved Page 1.
-- If it’s wrong, your URL will not match and you won’t land on the correct next page.
+**Example:** After solving and verifying your answer, navigate to:
+`https://github.com/nemoyatpeace/ap-calc-unit4-escape/blob/main/page2.md`
 
-Next: Navigate to page2.md after solving.
+## Confirmation Mechanic:
+
+- If you've solved the problem correctly, page2.md will display content confirming you're on the right track.
+- **Student Note:** You're solving an escape room! Each correct answer conceptually unlocks the next page. Work through the calculus carefully and check your algebra. The actual "unlock" is your understanding of the mathematics.
+
+**Next:** Navigate to page2.md after solving.
