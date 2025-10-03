@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>🔓 Room 5 Unlocked! - AP Calc Escape Room</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid #c44569;
+        }
+        
+        .lock-icon {
+            font-size: 60px;
+            margin-bottom: 10px;
+            animation: unlock 0.6s ease-out;
+        }
+        
+        @keyframes unlock {
+            0% { transform: rotate(-30deg); opacity: 0.5; }
+            50% { transform: rotate(10deg); }
+            100% { transform: rotate(0deg); opacity: 1; }
+        }
+        
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            color: #fff;
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .progress-bar {
+            background: #fff;
+            height: 30px;
+            border-radius: 15px;
+            margin: 20px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+            width: 83.33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+            transition: width 1s ease;
+            animation: fillProgress 1.5s ease-out;
+        }
+        
+        @keyframes fillProgress {
+            0% { width: 0%; }
+            100% { width: 83.33%; }
+        }
+        
+        .content {
+            padding: 40px;
+            color: #333;
+        }
+        
+        .success-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .success-message h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 30px 0;
+        }
+        
+        .problem-box {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .problem-box h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .problem-text {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        
+        .equation {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #667eea;
+            border: 2px solid #e8eaf6;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .part {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            border-left: 4px solid #f5576c;
+        }
+        
+        .part strong {
+            color: #f5576c;
+            font-size: 1.2em;
+        }
+        
+        .key-instructions {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .key-instructions h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .key-format {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .hint-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            color: #856404;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .hint-box strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="lock-icon">🔓</div>
+            <h1>Congratulations! Room 5 Unlocked!</h1>
+            <p class="subtitle">You've mastered related rates!</p>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill">Room 5 of 6 (83%)</div>
+        </div>
+        
+        <div class="content">
+            <div class="success-message">
+                <h2>✨ Well Done! ✨</h2>
+                <p>You correctly solved the balloon problem and found the key: 72226</p>
+                <p style="margin-top: 10px;">You're almost at the finish line! One more challenge awaits!</p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="problem-box">
+                <h3><span class="emoji">🎯</span> Challenge 5: Next Problem</h3>
+                <p class="problem-text">Content for page5 problem will be displayed here.</p>
+                <p class="problem-text" style="margin-top: 15px;">This page serves as a placeholder showing you've successfully completed the related rates problem.</p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div style="background: #e8f5e9; border-left: 5px solid #4caf50; padding: 20px; border-radius: 10px; margin-top: 30px; color: #1b5e20;">
+                <strong>🎮 Student Note:</strong>
+                <p style="margin-top: 10px;">You're solving an escape room! Each page's filename IS the solution to the previous problem. You've made excellent progress through Unit 4!</p>
+                <p style="margin-top: 15px; text-align: center; font-size: 1.2em;">Continue to the next challenge!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            🧮 AP Calculus Unit 4 Escape Room | Room 5 of 6 | Almost there! 🚀
+        </div>
+    </div>
+</body>
+</html>
