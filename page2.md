@@ -18,24 +18,36 @@ for t ≥ 0.
 
 **(d)** Is the particle speeding up or slowing down at t = 1 second? Justify your answer by examining the signs of velocity and acceleration.
 
-**Your final numeric answer for this page is the acceleration at t = 3 (your answer to part c).**
+**Your navigation key:** Concatenate your answers from parts (c) and (d) with NO spaces:
+- Part (c): The acceleration value as a whole number (e.g., if 6, use "6")
+- Part (d): Write "speedingup" if speeding up, "slowingdown" if slowing down, or "neither" if at rest
+- Example format: if part (c) = 6 and part (d) = speeding up, then the key is "6speedingup"
 
 ---
 
-## Escape Instructions (URL-based):
+## Escape Instructions:
 
-- Your final answer is a single number (the acceleration at t = 3).
-- This should be an integer, so no decimal places needed.
-- Remove any commas or spaces.
-- Your escape string is that value with a minus sign only if negative.
-- To navigate to the next page, simply proceed to page3.md.
+**CRITICAL:** You must solve ALL parts (a), (b), (c), and (d) to determine your navigation key.
 
-**Example:** After solving, navigate to:
-`https://github.com/nemoyatpeace/ap-calc-unit4-escape/blob/main/page3.md`
+1. Solve part (a) to find v(t) and a(t)
+2. Solve part (b) to find when the particle is at rest (you'll need this for part d)
+3. Solve part (c) - express a(3) as a whole number
+4. Solve part (d) - determine if speeding up or slowing down at t=1
+   - At t=1: calculate v(1) and a(1)
+   - If v and a have the same sign (both positive OR both negative), particle is speeding up
+   - If v and a have opposite signs, particle is slowing down
+   - If v=0, particle is at rest (transitioning)
+5. Concatenate parts (c) and (d) with no spaces: [answer_c][answer_d]
+6. Navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html`
 
-## Confirmation Mechanic:
+**Example:** If you calculated a(3) = 6 and determined the particle is speeding up at t=1, your key would be "6speedingup"
 
-- If you've solved the problem correctly, page3.md will display the next challenge.
-- **Student Note:** You're solving an escape room! Each problem builds your understanding of Unit 4 concepts. Work through the calculus systematically.
+Then navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/6speedingup.html`
 
-**Next:** Navigate to page3.md after solving.
+---
+
+## Student Note:
+
+You're solving an escape room! Each page's filename IS the solution to the previous problem. You cannot skip ahead without solving the problem correctly. Work through the calculus systematically.
+
+**Next:** Navigate to `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html` after solving.
