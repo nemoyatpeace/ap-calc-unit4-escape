@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Calculus Unit 4 Escape Room</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .emoji-header {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .info-box {
+            background: #f7f9fc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 5px;
+        }
+        
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .info-box ul {
+            list-style-position: inside;
+            color: #555;
+            line-height: 2;
+        }
+        
+        .info-box li {
+            margin-bottom: 8px;
+        }
+        
+        .start-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .start-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+        
+        .start-button:active {
+            transform: translateY(-1px);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 15px;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        
+        .warning strong {
+            color: #ff6b6b;
+        }
+        
+        footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji-header">🚪🔐🧮</div>
+        <h1>AP Calculus Unit 4<br/>Escape Room Challenge</h1>
+        <p class="subtitle">Master Applications of Derivatives Through Problem-Solving</p>
+        
+        <div class="description">
+            <p>Welcome to an interactive learning adventure! This escape room challenges you to apply your knowledge of derivatives in real-world contexts. Each room contains a carefully crafted calculus problem that you must solve to progress.</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Challenging Rooms</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">AP</div>
+                <div class="stat-label">Calculus Level</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">FRQ</div>
+                <div class="stat-label">Style Questions</div>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <h3>🎯 Topics Covered</h3>
+            <ul>
+                <li>📊 Interpreting derivatives in context</li>
+                <li>🚗 Position, velocity, and acceleration</li>
+                <li>📈 Rates of change in various scenarios</li>
+                <li>🔗 Related rates problems</li>
+                <li>📐 Linear approximation</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>📋 How It Works</h3>
+            <ul>
+                <li>Solve each multi-part calculus problem completely</li>
+                <li>Combine your numerical answers to create a navigation key</li>
+                <li>Use the key to unlock the URL of the next room</li>
+                <li>Progress through all 6 rooms to complete the challenge</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <strong>⚠️ Important:</strong> Each page filename IS the solution to the previous problem. You cannot skip ahead without solving problems correctly. Work carefully and check your algebra!
+        </div>
+        
+        <a href="page1.html" class="start-button">🚀 Begin Challenge</a>
+        
+        <footer>
+            <p>🧮 AP Calculus Unit 4: Applications of Derivatives | Good luck! 🍀</p>
+        </footer>
+    </div>
+</body>
+</html>
