@@ -12,27 +12,35 @@ where t is time in minutes after the coffee was poured.
 
 **(a)** Find T'(t), the rate of change of temperature with respect to time.
 
-**(b)** Evaluate T'(10) and explain what this value represents in the context of the problem. Include proper units.
+**(b)** At what rate is the temperature changing at t = 10 minutes? Express your answer as a positive whole number of degrees per minute (rounded to nearest integer).
 
-**(c)** At what time t is the temperature decreasing at a rate of 2 degrees Celsius per minute? Round your answer to 2 decimal places.
+**(c)** At what time t is the temperature decreasing at a rate of 2 degrees Celsius per minute? Round your answer to the nearest whole number of minutes.
 
-**Your final numeric answer for this page is your answer to part (c).**
+**Your navigation key:** Concatenate your answers from parts (b) and (c) with NO spaces:
+- Part (b): The rate as a whole number (e.g., if 2.16°C/min, round to "2")
+- Part (c): The time as a whole number (e.g., if 11.03 min, round to "11")
+- Example format: if part (b) = 2 and part (c) = 11, then the key is "211"
 
 ---
 
-## Escape Instructions (URL-based):
+## Escape Instructions:
 
-- Round your final value to 2 decimal places.
-- Remove any commas or spaces.
-- Your escape string is that value (no minus sign needed for this problem).
-- To navigate to the next page, simply proceed to page4.md.
+**CRITICAL:** You must solve ALL parts (a), (b), and (c) to determine your navigation key.
 
-**Example:** After solving, navigate to:
-`https://github.com/nemoyatpeace/ap-calc-unit4-escape/blob/main/page4.md`
+1. Solve part (a) to find T'(t)
+2. Solve part (b) - evaluate T'(10) and express as a POSITIVE whole number (round to nearest integer)
+3. Solve part (c) - solve T'(t) = -2 for t, round to nearest integer
+4. Concatenate parts (b) and (c) with no spaces: [answer_b][answer_c]
+5. Navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html`
 
-## Confirmation Mechanic:
+**Example:** If you calculated T'(10) ≈ 2°C/min and t ≈ 11 minutes, your key would be "211"
 
-- If you've solved the problem correctly, page4.md will display the next challenge.
-- **Student Note:** You're solving an escape room! Each correct answer conceptually unlocks the next page. Work through the calculus carefully and check your algebra.
+Then navigate to: `https://nemoyatpeace.github.io/ap-calc-unit4-escape/211.html`
 
-**Next:** Navigate to page4.md after solving.
+---
+
+## Student Note:
+
+You're solving an escape room! Each page's filename IS the solution to the previous problem. You cannot skip ahead without solving the problem correctly. Work through the calculus carefully.
+
+**Next:** Navigate to `https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html` after solving.
