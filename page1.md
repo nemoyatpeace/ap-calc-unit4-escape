@@ -1,26 +1,21 @@
-# Page 1: Related Rates - The Leaking Tank
+# Page 1 — Unit 4: The Chain Rule (FRQ)
 
-## Problem
+Subtopic: Differentiation using the Chain Rule in context
 
-A cylindrical water tank with radius 3 meters has a small leak at the bottom. Water is draining from the tank at a rate of 2 cubic meters per minute. At the moment when the water depth is 5 meters:
+Problem:
+A particle moves along a path where y = (3x^2 + 1)^(5/2). At x = 2,
+- Compute dy/dx using the Chain Rule.
+- Evaluate the numeric value at x = 2.
 
-**Find the rate at which the water level is dropping.**
+Escape Instructions (URL-based):
+- Round your dy/dx value to 4 decimal places.
+- Remove any commas or spaces.
+- Your escape string is that value with a minus sign only if negative.
+- Append it to the repository URL as the next page filename.
+  Example: if your answer is 123.4567, go to page2.md (this page) by entering the URL for page2.md.
 
-Show your work and reasoning clearly.
+Confirmation mechanic:
+- If your answer is correct, the next page (page2.md) will load successfully and confirm you solved Page 1.
+- If it’s wrong, your URL will not match and you won’t land on the correct next page.
 
-## Instructions
-
-Once you have solved the problem:
-
-1. Calculate your answer (in meters per minute)
-2. Round your answer to 4 decimal places
-3. Your escape code is the **absolute value** of your answer multiplied by 10000
-4. Enter this code (as an integer) to proceed to Page 2
-
-**Example:** If your answer is -0.0707 m/min, the absolute value is 0.0707, multiply by 10000 to get 707
-
----
-
-**Escape String Format:** Your 3-4 digit integer
-
-**Next Page:** [page2.md](page2.md)
+Next: Navigate to page2.md after solving.
