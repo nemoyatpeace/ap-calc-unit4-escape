@@ -163,28 +163,34 @@
             font-size: 1.2em;
         }
         
-        .key-instructions {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: #fff;
+        .key-box {
+            background: #fff9e6;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
             padding: 25px;
-            border-radius: 15px;
             margin: 30px 0;
         }
         
-        .key-instructions h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .key-box h3 {
+            color: #ff6f00;
+            margin-top: 0;
+            font-size: 1.3em;
         }
         
-        .key-format {
-            background: rgba(255,255,255,0.2);
+        .key-box ul {
+            line-height: 1.8;
+        }
+        
+        .key-box ol {
+            line-height: 1.8;
+        }
+        
+        .example {
+            background: #e3f2fd;
             padding: 15px;
-            border-radius: 10px;
-            margin: 10px 0;
-            font-family: 'Courier New', monospace;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #2196f3;
         }
         
         ul {
@@ -233,38 +239,39 @@
             
             <div class="problem-box">
                 <h3><span class="emoji">🎯</span> Challenge 4: Related Rates (Balloons)</h3>
-                <p class="problem-text">Subtopic: Related rates with volume and radius</p>
-                <p class="problem-text" style="margin-top: 15px;">Problem:</p>
+                <p class="problem-text"><strong>Subtopic:</strong> Related rates with volume and radius</p>
+                <p class="problem-text" style="margin-top: 15px;"><strong>Problem:</strong></p>
                 <p class="problem-text">A spherical balloon is being inflated. The volume V of a sphere with radius r is given by:</p>
                 
                 <div class="equation">V = (4/3)πr³</div>
                 <p class="problem-text">Suppose the radius is increasing at a constant rate of 0.5 cm per second.</p>
                 
                 <div class="part">
-                    <strong>(a)</strong> Use the chain rule to find dV/dt in terms of r and dr/dt.
+                    <p><strong>(a)</strong> Use the chain rule to find dV/dt in terms of r and dr/dt.</p>
                 </div>
                 
                 <div class="part">
-                    <strong>(b)</strong> At the instant when the radius is 6 cm, how fast is the volume increasing? Express your answer in terms of π as a coefficient (e.g., "72pi").
+                    <p><strong>(b)</strong> At the instant when the radius is 6 cm, how fast is the volume increasing? Express your answer in terms of π as a coefficient (e.g., "72pi").</p>
                 </div>
                 
                 <div class="part">
-                    <strong>(c)</strong> Calculate the numeric value of your answer from part (b) using π ≈ 3.14159. Round to the nearest whole number of cubic cm per second.
+                    <p><strong>(c)</strong> Calculate the numeric value of your answer from part (b) using π ≈ 3.14159. Round to the nearest whole number of cubic cm per second.</p>
                 </div>
             </div>
             
-            <div class="key-instructions">
+            <div class="key-box">
                 <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
-                <p>Concatenate your answers from parts (b) and (c) with NO spaces:</p>
-                <ul>
-                    <li>Part (b): The coefficient of π (e.g., if 48π, use "48")</li>
-                    <li>Part (c): The numeric value as a whole number (e.g., if 150.80, round to "151")</li>
-                </ul>
-                <div class="key-format">
-                    Example format: If part (b) = 48π and part (c) = 151, then the key is: "48151"<br/>
-                    (Note: This is just an example - these are NOT the correct answers!)
+                <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), and (c) to determine your navigation key.</p>
+                <div class="example">
+                    <p><strong>Example format:</strong> If part (b) = 48π and part (c) = 151, then your key would be "48151"</p>
+                    <p>(Note: This is just an example - these are NOT the correct answers!)</p>
                 </div>
-                <p style="margin-top: 15px;">Once you have calculated both answers, concatenate them and navigate to: https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</p>
+                <ol>
+                    <li>Express the coefficient of π from part (b) as a whole number.</li>
+                    <li>Express the numeric value from part (c) as a whole number.</li>
+                    <li>Concatenate those answers, no spaces or units.</li>
+                    <li>Navigate to the next page using <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
+                </ol>
             </div>
         </div>
         
