@@ -116,30 +116,6 @@
             margin: 15px 0;
             border-left: 4px solid #2196f3;
         }
-        .hint-button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            margin: 10px 0;
-        }
-        .hint-button:hover {
-            background: #45a049;
-        }
-        .hint-content {
-            display: none;
-            background: #e8f5e9;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 10px 0;
-            border-left: 4px solid #4CAF50;
-        }
-        .hint-content.show {
-            display: block;
-        }
         .emoji {
             font-size: 1.3em;
         }
@@ -181,10 +157,6 @@
             <div class="part">
                 <p><strong>(c)</strong> At what time t is the water draining at a rate of 15 gallons per minute? Show your work.</p>
             </div>
-            <button class="hint-button" onclick="document.getElementById('hint1').classList.toggle('show')">💡 Show Hint</button>
-            <div id="hint1" class="hint-content">
-                <p><strong>Hint:</strong> Remember that V'(t) represents the rate of change. Since the volume is decreasing, V'(t) will be negative. For part (b), express the rate as a positive number (the magnitude of the rate of drainage).</p>
-            </div>
         </div>
         <div class="key-box">
             <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
@@ -204,11 +176,5 @@
             <p><span class="emoji">🧮</span> AP Calculus Unit 4 Escape Room | Room 1 of 6 | Good luck! <span class="emoji">🚀</span></p>
         </footer>
     </div>
-    <script>
-        // Toggle hint visibility
-        function toggleHint(id) {
-            document.getElementById(id).classList.toggle('show');
-        }
-    </script>
 </body>
 </html>
