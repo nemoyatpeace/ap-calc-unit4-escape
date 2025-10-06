@@ -163,28 +163,34 @@
             font-size: 1.2em;
         }
         
-        .key-instructions {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: #fff;
+        .key-box {
+            background: #fff9e6;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
             padding: 25px;
-            border-radius: 15px;
             margin: 30px 0;
         }
         
-        .key-instructions h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .key-box h3 {
+            color: #ff6f00;
+            margin-top: 0;
+            font-size: 1.3em;
         }
         
-        .key-format {
-            background: rgba(255,255,255,0.2);
+        .key-box ul {
+            line-height: 1.8;
+        }
+        
+        .key-box ol {
+            line-height: 1.8;
+        }
+        
+        .example {
+            background: #e3f2fd;
             padding: 15px;
-            border-radius: 10px;
-            margin: 10px 0;
-            font-family: 'Courier New', monospace;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #2196f3;
         }
         
         ul {
@@ -233,38 +239,39 @@
             
             <div class="problem-box">
                 <h3><span class="emoji">🎯</span> Challenge 3: Rates of Change in Other Contexts</h3>
-                <p class="problem-text">Subtopic: Interpreting rates of change in applied contexts (non-motion)</p>
-                <p class="problem-text" style="margin-top: 15px;">Problem:</p>
+                <p class="problem-text"><strong>Subtopic:</strong> Interpreting rates of change in applied contexts (non-motion)</p>
+                <p class="problem-text" style="margin-top: 15px;"><strong>Problem:</strong></p>
                 <p class="problem-text">The temperature T (in degrees Celsius) of a cooling cup of coffee is modeled by:</p>
                 
                 <div class="equation">T(t) = 20 + 60e^(-0.08t)</div>
                 <p class="problem-text">where t is time in minutes after the coffee was poured.</p>
                 
                 <div class="part">
-                    <strong>(a)</strong> Find T'(t), the rate of change of temperature with respect to time.
+                    <p><strong>(a)</strong> Find T'(t), the rate of change of temperature with respect to time.</p>
                 </div>
                 
                 <div class="part">
-                    <strong>(b)</strong> At what rate is the temperature changing at t = 10 minutes? Express your answer as a positive whole number of degrees per minute (rounded to nearest integer).
+                    <p><strong>(b)</strong> At what rate is the temperature changing at t = 10 minutes? Express your answer as a positive whole number of degrees per minute (rounded to nearest integer).</p>
                 </div>
                 
                 <div class="part">
-                    <strong>(c)</strong> At what time t is the temperature decreasing at a rate of 2 degrees Celsius per minute? Round your answer to the nearest whole number of minutes.
+                    <p><strong>(c)</strong> At what time t is the temperature decreasing at a rate of 2 degrees Celsius per minute? Round your answer to the nearest whole number of minutes.</p>
                 </div>
             </div>
             
-            <div class="key-instructions">
+            <div class="key-box">
                 <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
-                <p>Concatenate your answers from parts (b) and (c) with NO spaces:</p>
-                <ul>
-                    <li>Part (b): The rate as a whole number (e.g., if 4.32°C/min, round to "4")</li>
-                    <li>Part (c): The time as a whole number (e.g., if 17.89 min, round to "18")</li>
-                </ul>
-                <div class="key-format">
-                    Example format: If part (b) = 4 and part (c) = 18, then the key is: "418"<br/>
-                    (Note: This is just an example - these are NOT the correct answers!)
+                <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), and (c) to determine your navigation key.</p>
+                <div class="example">
+                    <p><strong>Example format:</strong> If part (b) = 4 and part (c) = 18, then your key would be "418"</p>
+                    <p>(Note: This is just an example - these are NOT the correct answers!)</p>
                 </div>
-                <p style="margin-top: 15px;">Once you have calculated both answers, concatenate them and navigate to: https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</p>
+                <ol>
+                    <li>Express the rate from part (b) as a positive whole number.</li>
+                    <li>Express the time from part (c) as a whole number.</li>
+                    <li>Concatenate those answers, no spaces or units.</li>
+                    <li>Navigate to the next page using <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
+                </ol>
             </div>
         </div>
         
