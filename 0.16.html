@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔓 Room 5 Unlocked! - AP Calc Escape Room</title>
+    <title>🔓 Room 6 Unlocked! - AP Calc Escape Room</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             color: #fff;
             min-height: 100vh;
             padding: 20px;
@@ -29,10 +29,10 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #FF6B6B 0%, #FFD93D 100%);
             padding: 30px;
             text-align: center;
-            border-bottom: 5px solid #c44569;
+            border-bottom: 5px solid #FF6B6B;
         }
         
         .lock-icon {
@@ -71,8 +71,8 @@
         
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
-            width: 83.33%;
+            background: linear-gradient(90deg, #FF6B6B 0%, #FFD93D 100%);
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -84,7 +84,7 @@
         
         @keyframes fillProgress {
             0% { width: 0%; }
-            100% { width: 83.33%; }
+            100% { width: 100%; }
         }
         
         .content {
@@ -93,29 +93,30 @@
         }
         
         .success-message {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #2c3e50;
             padding: 25px;
             border-radius: 15px;
             margin-bottom: 30px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(168, 237, 234, 0.4);
         }
         
         .success-message h2 {
             font-size: 2em;
             margin-bottom: 10px;
+            color: #FF6B6B;
         }
         
         .divider {
             height: 3px;
-            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            background: linear-gradient(90deg, transparent, #FF6B6B, transparent);
             margin: 30px 0;
         }
         
         .problem-box {
             background: #f8f9fa;
-            border-left: 5px solid #667eea;
+            border-left: 5px solid #FF6B6B;
             padding: 25px;
             margin: 20px 0;
             border-radius: 10px;
@@ -123,7 +124,7 @@
         }
         
         .problem-box h3 {
-            color: #667eea;
+            color: #FF6B6B;
             font-size: 1.8em;
             margin-bottom: 15px;
             display: flex;
@@ -139,21 +140,21 @@
         }
         
         .navigation-box {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
+            background: #d4edda;
+            border-left: 5px solid #28a745;
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
         }
         
         .navigation-box h4 {
-            color: #856404;
+            color: #155724;
             margin-bottom: 10px;
             font-size: 1.3em;
         }
         
         .navigation-box p {
-            color: #856404;
+            color: #155724;
             line-height: 1.6;
         }
         
@@ -174,50 +175,50 @@
     <div class="container">
         <div class="header">
             <div class="lock-icon">🔓</div>
-            <h1>Congratulations! Room 5 Unlocked!</h1>
-            <p class="subtitle">You've mastered related rates!</p>
+            <h1>Congratulations! Final Challenge!</h1>
+            <p class="subtitle">You've reached the last room!</p>
         </div>
         
         <div class="progress-bar">
-            <div class="progress-fill">Room 5 of 6 (83%)</div>
+            <div class="progress-fill">Room 6 of 6 (100%)</div>
         </div>
         
         <div class="content">
             <div class="success-message">
-                <h2>✨ Well Done! ✨</h2>
-                <p>You correctly solved the balloon problem and found the key: 72226</p>
-                <p style="margin-top: 10px;">You're almost at the finish line! One more challenge awaits!</p>
+                <h2>✨ Amazing Progress! ✨</h2>
+                <p>You correctly solved the Coney Island problem and found the key: 0.16</p>
+                <p style="margin-top: 10px; font-weight: bold;">This is your final challenge! Solve it to escape the room!</p>
             </div>
             
             <div class="divider"></div>
             
             <div class="problem-box">
-                <h3><span class="emoji">🎯</span> Challenge 5: Related Rates (Coney Island)</h3>
-                <p class="problem-text"><strong>Subtopic:</strong> Related rates with distance and position</p>
+                <h3><span class="emoji">🎯</span> Challenge 6: Approximations with Linearization</h3>
+                <p class="problem-text"><strong>Subtopic:</strong> Linear approximation and tangent line approximations</p>
                 <p class="problem-text"><strong>Problem:</strong></p>
-                <p class="problem-text">Two people are walking on the Coney Island boardwalk. Person A starts at the origin and walks north along the y-axis at 3 feet per second. Person B starts at the point (0, 40) and walks east along the line y = 40 at 4 feet per second.</p>
-                <p class="problem-text"><strong>(a)</strong> Write expressions for the positions of Person A and Person B at time t seconds. Person A's position is (0, y_A(t)) and Person B's position is (x_B(t), 40).</p>
-                <p class="problem-text"><strong>(b)</strong> Let D(t) represent the distance between the two people at time t. Using the distance formula, write an expression for D(t) in terms of t.</p>
-                <p class="problem-text"><strong>(c)</strong> Find dD/dt, the rate at which the distance between them is changing.</p>
-                <p class="problem-text"><strong>(d)</strong> Evaluate dD/dt when t = 5 seconds. Round your answer to 2 decimal places.</p>
-                <p class="problem-text"><strong>Your final numeric answer for this page is your answer to part (d) in feet per second.</strong></p>
+                <p class="problem-text">Let f(x) = √(x + 1).</p>
+                <p class="problem-text"><strong>(a)</strong> Find f'(x), the derivative of f.</p>
+                <p class="problem-text"><strong>(b)</strong> Write the equation of the tangent line to f at x = 3. This tangent line is the linear approximation L(x) near x = 3.</p>
+                <p class="problem-text"><strong>(c)</strong> Use the linear approximation L(x) from part (b) to estimate f(3.2) = √(4.2).</p>
+                <p class="problem-text"><strong>(d)</strong> Calculate the actual value of f(3.2) = √(4.2) using a calculator, and find the absolute error |f(3.2) - L(3.2)|. Round both values to 4 decimal places.</p>
+                <p class="problem-text"><strong>Your final numeric answer for this page is the absolute error from part (d), rounded to 4 decimal places.</strong></p>
             </div>
             
             <div class="divider"></div>
             
             <div class="navigation-box">
-                <h4>🔑 Navigation Key Instructions:</h4>
+                <h4>🏆 Final Navigation Key Instructions:</h4>
                 <p><strong>Step 1:</strong> Solve all parts of the problem above.</p>
-                <p><strong>Step 2:</strong> Your answer to part (d) is the navigation key (rounded to 2 decimal places).</p>
+                <p><strong>Step 2:</strong> Your answer to part (d) is the final navigation key (rounded to 4 decimal places).</p>
                 <p><strong>Step 3:</strong> Remove any commas or spaces from your answer.</p>
                 <p><strong>Step 4:</strong> Navigate to: <strong>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_answer].html</strong></p>
-                <p style="margin-top: 10px;"><em>Example format: If your answer is 1.25, navigate to 1.25.html</em></p>
-                <p style="margin-top: 10px; font-weight: bold;">⚠️ Remember: The filename IS the solution! You must solve the problem to continue.</p>
+                <p style="margin-top: 10px;"><em>Example format: If your error is 0.0006, navigate to 0.0006.html</em></p>
+                <p style="margin-top: 10px; font-weight: bold;">✅ This is the final question! Success leads to victory!</p>
             </div>
         </div>
         
         <div class="footer">
-            🧮 AP Calculus Unit 4 Escape Room | Room 5 of 6 | Almost there! 🚀
+            🧮 AP Calculus Unit 4 Escape Room | Room 6 of 6 | Final Challenge! 🏁
         </div>
     </div>
 </body>
