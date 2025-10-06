@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>🔓 Room 3 Unlocked! - AP Calc Escape Room</title>
     <style>
         * {
@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -18,7 +17,6 @@
             min-height: 100vh;
             padding: 20px;
         }
-        
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -27,39 +25,33 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
-        
         .header {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             padding: 30px;
             text-align: center;
             border-bottom: 5px solid #c44569;
         }
-        
         .lock-icon {
             font-size: 60px;
             margin-bottom: 10px;
             animation: unlock 0.6s ease-out;
         }
-        
         @keyframes unlock {
             0% { transform: rotate(-30deg); opacity: 0.5; }
             50% { transform: rotate(10deg); }
             100% { transform: rotate(0deg); opacity: 1; }
         }
-        
         h1 {
             color: #fff;
             font-size: 2.5em;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        
         .subtitle {
             color: #fff;
             font-size: 1.2em;
             opacity: 0.95;
         }
-        
         .progress-bar {
             background: #fff;
             height: 30px;
@@ -68,7 +60,6 @@
             overflow: hidden;
             box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
         }
-        
         .progress-fill {
             height: 100%;
             background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
@@ -81,17 +72,14 @@
             transition: width 1s ease;
             animation: fillProgress 1.5s ease-out;
         }
-        
         @keyframes fillProgress {
             0% { width: 0%; }
             100% { width: 33.33%; }
         }
-        
         .content {
             padding: 40px;
             color: #333;
         }
-        
         .success-message {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #fff;
@@ -101,18 +89,15 @@
             text-align: center;
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
         .success-message h2 {
             font-size: 2em;
             margin-bottom: 10px;
         }
-        
         .divider {
             height: 3px;
             background: linear-gradient(90deg, transparent, #667eea, transparent);
             margin: 30px 0;
         }
-        
         .problem-box {
             background: #f8f9fa;
             border-left: 5px solid #667eea;
@@ -121,7 +106,6 @@
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
-        
         .problem-box h3 {
             color: #667eea;
             font-size: 1.8em;
@@ -130,13 +114,11 @@
             align-items: center;
             gap: 10px;
         }
-        
         .problem-text {
             line-height: 1.8;
             font-size: 1.1em;
             color: #2c3e50;
         }
-        
         .equation {
             background: #fff;
             padding: 20px;
@@ -149,7 +131,6 @@
             border: 2px solid #e8eaf6;
             font-family: 'Courier New', monospace;
         }
-        
         .part {
             margin: 20px 0;
             padding: 15px;
@@ -157,12 +138,7 @@
             border-radius: 8px;
             border-left: 4px solid #f5576c;
         }
-        
-        .part strong {
-            color: #f5576c;
-            font-size: 1.2em;
-        }
-        
+        .part strong { color: #f5576c; font-size: 1.2em; }
         .key-box {
             background: #fff9e6;
             border: 2px solid #ffc107;
@@ -170,21 +146,8 @@
             padding: 25px;
             margin: 30px 0;
         }
-        
-        .key-box h3 {
-            color: #ff6f00;
-            margin-top: 0;
-            font-size: 1.3em;
-        }
-        
-        .key-box ul {
-            line-height: 1.8;
-        }
-        
-        .key-box ol {
-            line-height: 1.8;
-        }
-        
+        .key-box h3 { color: #ff6f00; margin-top: 0; font-size: 1.3em; }
+        .key-box ul, .key-box ol { line-height: 1.8; }
         .example {
             background: #e3f2fd;
             padding: 15px;
@@ -192,92 +155,74 @@
             margin: 15px 0;
             border-left: 4px solid #2196f3;
         }
-        
-        ul {
-            margin: 15px 0;
-            padding-left: 30px;
-        }
-        
-        li {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        
-        .footer {
-            background: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-        }
-        
-        .emoji {
-            font-size: 1.3em;
-        }
+        ul { margin: 15px 0; padding-left: 30px; }
+        li { margin: 10px 0; line-height: 1.6; }
+        .footer { background: #2c3e50; color: #fff; text-align: center; padding: 20px; font-size: 0.9em; }
+        .emoji { font-size: 1.3em; }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="lock-icon">🔓</div>
-            <h1>Congratulations! Room 3 Unlocked!</h1>
-            <p class="subtitle">You've mastered motion analysis with derivatives</p>
+      <div class="header">
+        <div class="lock-icon">🔓</div>
+        Congratulations! Room 3 Unlocked!
+        <p class="subtitle">You've mastered motion analysis with derivatives</p>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill">2/6</div>
+      </div>
+
+      <div class="content">
+        <div class="success-message">
+          ✨ Well Done! ✨
+          You correctly solved the particle motion problem and found the key: 6speedingup
+          <p style="margin-top: 10px;">Now let's apply derivatives to a new context!</p>
         </div>
-        
-        <div class="progress-bar">
-            <div class="progress-fill">2/6</div>
+
+        <div class="divider"></div>
+
+        <div class="problem-box">
+          <h3><span class="emoji">🎯</span> Challenge 3: Rates of Change in Other Contexts</h3>
+          <p class="problem-text">Subtopic: Interpreting rates of change in applied contexts (non-motion)</p>
+          <p class="problem-text" style="margin-top: 15px;">Problem:</p>
+          <p class="problem-text">The temperature T (in degrees Celsius) of a cooling cup of coffee is modeled by:</p>
+
+          <div class="equation">T(t) = 20 + 60e<sup>-0.08t</sup></div>
+          <p class="problem-text">where t is time in minutes after the coffee was poured.</p>
+
+          <div class="part">
+            (a) Find T'(t), the rate of change of temperature with respect to time.
+          </div>
+
+          <div class="part">
+            (b) At what rate is the temperature changing at t = 10 minutes? Express your answer as a positive whole number of degrees per minute (rounded to nearest integer).
+          </div>
+
+          <div class="part">
+            (c) At what time t is the temperature decreasing at a rate of 2 degrees Celsius per minute? Round your answer to the nearest whole number of minutes.
+          </div>
         </div>
-        
-        <div class="content">
-            <div class="success-message">
-                <h2>✨ Well Done! ✨</h2>
-                <p>You correctly solved the particle motion problem and found the key: 6speedingup</p>
-                <p style="margin-top: 10px;">Now let's apply derivatives to a new context!</p>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <div class="problem-box">
-                <h3><span class="emoji">🎯</span> Challenge 3: Rates of Change in Other Contexts</h3>
-                <p class="problem-text"><strong>Subtopic:</strong> Interpreting rates of change in applied contexts (non-motion)</p>
-                <p class="problem-text" style="margin-top: 15px;"><strong>Problem:</strong></p>
-                <p class="problem-text">The temperature T (in degrees Celsius) of a cooling cup of coffee is modeled by:</p>
-                
-                <div class="equation">T(t) = 20 + 60e^(-0.08t)</div>
-                <p class="problem-text">where t is time in minutes after the coffee was poured.</p>
-                
-                <div class="part">
-                    <p><strong>(a)</strong> Find T'(t), the rate of change of temperature with respect to time.</p>
-                </div>
-                
-                <div class="part">
-                    <p><strong>(b)</strong> At what rate is the temperature changing at t = 10 minutes? Express your answer as a positive whole number of degrees per minute (rounded to nearest integer).</p>
-                </div>
-                
-                <div class="part">
-                    <p><strong>(c)</strong> At what time t is the temperature decreasing at a rate of 2 degrees Celsius per minute? Round your answer to the nearest whole number of minutes.</p>
-                </div>
-            </div>
-            
-            <div class="key-box">
-                <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
-                <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), and (c) to determine your navigation key.</p>
-                <div class="example">
-                    <p><strong>Example format:</strong> If part (b) = 4 and part (c) = 18, then your key would be "418"</p>
-                    <p>(Note: This is just an example - these are NOT the correct answers!)</p>
-                </div>
-                <ol>
-                    <li>Express the rate from part (b) as a positive whole number.</li>
-                    <li>Express the time from part (c) as a whole number.</li>
-                    <li>Concatenate those answers, no spaces or units.</li>
-                    <li>Navigate to the next page using <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
-                </ol>
-            </div>
+
+        <div class="key-box">
+          <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
+          CRITICAL: You must solve ALL parts (a), (b), and (c) to determine your navigation key.
+          <div class="example">
+            Example format: If part (b) = 4 and part (c) = 18, then your key would be "418"
+            (Note: This is just an example - these are NOT the correct answers!)
+          </div>
+          <ol>
+            <li>Express the rate from part (b) as a positive whole number.</li>
+            <li>Express the time from part (c) as a whole number.</li>
+            <li>Concatenate those answers, no spaces or units.</li>
+            <li>Navigate to the next page using https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</li>
+          </ol>
         </div>
-        
-        <div class="footer">
-            🧮 AP Calculus Unit 4 Escape Room | Room 3 of 6 | Keep going! 🚀
-        </div>
+      </div>
+
+      <div class="footer">
+        🧮 AP Calculus Unit 4 Escape Room | Room 3 of 6 | Keep going! 🚀
+      </div>
     </div>
-</body>
+  </body>
 </html>
