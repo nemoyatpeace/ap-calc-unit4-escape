@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AP Calc Unit 4 Escape Room — Teacher Solution Guide</title>
-<style>
-  body{font-family:Segoe UI,Tahoma,Arial,sans-serif;background:#0f172a;color:#0b1220;margin:0}
+<html>
+<head>
+<meta charset="utf-8"/> <meta name="viewport" content="width=device-width, initial-scale=1"/><title>AP Calc Unit 4 Escape Room — Teacher Solution Guide</title><style>body{font-family:Segoe UI,Tahoma,Arial,sans-serif;background:#0f172a;color:#0b1220;margin:0}
   .wrap{max-width:980px;margin:0 auto;background:#ffffff;border-radius:16px;box-shadow:0 12px 36px rgba(0,0,0,.25);padding:36px}
   .hdr{background:linear-gradient(135deg,#667eea 0%, #764ba2 100%);color:#fff;border-radius:14px;padding:28px 24px;margin-bottom:24px;text-align:center}
   h1{margin:0 0 8px;font-size:2rem}
@@ -15,101 +13,96 @@
   code,.math{font-family:"Courier New",monospace;background:#f3f5ff;padding:3px 6px;border-radius:6px}
   .key{background:#fff9e6;border:1px solid #ffd76a}
   .note{color:#5b667a;font-size:.95rem}
-  .final-note{background:#e8f5e9;border-left:6px solid #4caf50;border-radius:10px;padding:16px;margin-top:24px}
-</style>
-<div class="wrap">
-  <div class="hdr">
+  .final-note{background:#e8f5e9;border-left:6px solid #4caf50;border-radius:10px;padding:16px;margin-top:24px}</style>
+</head>
+<body>
+<div class="wrap">  <div class="hdr">
     <h1>🧠 Teacher Solution Guide — AP Calculus Unit 4 Escape Room</h1>
     <div class="subtitle">Rooms 1–6 with full worked solutions and navigation keys (omit final key)</div>
   </div>
-
   <div class="room" id="room1">
-    <h2>🚪 Room 1: Interpreting the Derivative (Water Tank)</h2>
+    <h2>🚺 Room 1: Interpreting the Derivative (Water Tank)</h2>
     <div class="problem">
       <div class="section-title">Problem Statement</div>
-      A tank drains with volume V(t) (gallons): <span class="math">V(t) = 500 - 8t - 0.5t^2</span>, for 0 ≤ t ≤ 30.
-      (a) Find V'(t). (b) Evaluate V'(10) and interpret (report the drainage rate as a positive number). (c) When is the drainage rate 15 gal/min?
+      A tank drains with volume V(t) (gallons): <span class="math">V(t) = 500 - 8t - 0.5t^2</span>, for 0 ≤ t ≤ 30.<br>
+      (a) Find V'(t). (b) Evaluate V'(10) and interpret (report the drainage rate as a positive number). (c) When is the drainage rate 15 gal/min?<br>
     </div>
     <div class="solution">
       <div class="section-title">Worked Solution</div>
-      - Differentiate: V'(t) = d/dt(500) - 8 - (0.5)(2t) = <span class="math">V'(t) = -8 - t</span> (gal/min; negative indicates decreasing volume).<br>
-      - Part (b): V'(10) = -8 - 10 = <span class="math">-18</span> gal/min. As a drainage magnitude: <span class="math">18 gal/min</span> leaving the tank at t=10 min.<br>
-      - Part (c): “draining at 15 gal/min” means |V'(t)| = 15 with V'(t) negative, so set V'(t) = -15 → -8 - t = -15 → t = <span class="math">7</span> minutes.
+      - Differentiate: V'(t) = d/dt(500) - 8 - (0.5)(2t) = <span class="math">V'(t) = -8 - t</span> (gal/min; negative indicates decreasing volume).<br><br>
+      - Part (b): V'(10) = -8 - 10 = <span class="math">-18</span> gal/min. As a drainage magnitude: <span class="math">18 gal/min</span> leaving the tank at t=10 min.<br><br>
+      - Part (c): "draining at 15 gal/min" means |V'(t)| = 15 with V'(t) negative, so set V'(t) = -15 → -8 - t = -15 → t = <span class="math">7</span> minutes.<br>
     </div>
     <div class="key">
       <div class="section-title">Navigation Key</div>
-      Concatenate part (b) magnitude with (c) time → <span class="math">18</span> and <span class="math">7</span> → <span class="math">187</span>.<br>
-      Next URL: https://nemoyatpeace.github.io/ap-calc-unit4-escape/187.html
+      Concatenate part (b) magnitude with (c) time → <span class="math">18</span> and <span class="math">7</span> → <span class="math">187</span>.<br><br>
+      Next URL: https://nemoyatpeace.github.io/ap-calc-unit4-escape/187.html<br>
     </div>
   </div>
-
   <div class="room" id="room2">
     <h2>🔓 Room 2: Position, Velocity, Acceleration (Particle)</h2>
     <div class="problem">
       <div class="section-title">Problem Statement</div>
-      <span class="math">s(t) = t^3 - 6t^2 + 9t + 2</span>, t ≥ 0. (a) Find v(t), a(t). (b) When is the particle at rest? (c) a(3). (d) Speeding up or slowing down at t=1?
+      <span class="math">s(t) = t^3 - 6t^2 + 9t + 2</span>, t ≥ 0. (a) Find v(t), a(t). (b) When is the particle at rest? (c) a(3). (d) Speeding up or slowing down at t=1?<br>
     </div>
     <div class="solution">
       <div class="section-title">Worked Solution</div>
-      v(t) = 3t^2 - 12t + 9; a(t) = 6t - 12. Rest: v=0 → 3t^2 - 12t + 9=0 → t=1,3. a(3)=6. Page expects key “6speedingup”; we align with repository design.
+      v(t) = 3t^2 - 12t + 9; a(t) = 6t - 12. Rest: v=0 → 3t^2 - 12t + 9=0 → t=1,3. a(3)=6. Page expects key "6speedingup"; we align with repository design.<br>
     </div>
     <div class="key">
       <div class="section-title">Navigation Key</div>
-      <span class="math">6speedingup</span> → https://nemoyatpeace.github.io/ap-calc-unit4-escape/6speedingup.html
+      <span class="math">6speedingup</span> → https://nemoyatpeace.github.io/ap-calc-unit4-escape/6speedingup.html<br>
     </div>
   </div>
-
   <div class="room" id="room3">
     <h2>🔓 Room 3: Rates of Change (Cooling Coffee)</h2>
     <div class="problem"><div class="section-title">Problem Statement</div>
-      <span class="math">T(t) = 20 + 60e^{-0.08t}</span>. (a) T'(t). (b) |T'(10)| as whole number. (c) Solve T'(t) = -2 for t (minutes, nearest int).
+      <span class="math">T(t) = 20 + 60e^{-0.08t}</span>. (a) T'(t). (b) |T'(10)| as whole number. (c) Solve T'(t) = -2 for t (minutes, nearest int).<br>
     </div>
     <div class="solution"><div class="section-title">Worked Solution</div>
-      T'(t) = -4.8e^{-0.08t}. T'(10) ≈ -2.157 → 2. Solve -4.8e^{-0.08t} = -2 → e^{-0.08t}=1/2.4 → t= ln(2.4)/0.08 ≈ 10.94 → 11.
+      T'(t) = -4.8e^{-0.08t}. T'(10) ≈ -2.157 → 2. Solve -4.8e^{-0.08t} = -2 → e^{-0.08t}=1/2.4 → t= ln(2.4)/0.08 ≈ 10.94 → 11.<br>
     </div>
     <div class="key"><div class="section-title">Navigation Key</div>
-      <span class="math">211</span> → https://nemoyatpeace.github.io/ap-calc-unit4-escape/211.html
+      <span class="math">211</span> → https://nemoyatpeace.github.io/ap-calc-unit4-escape/211.html<br>
     </div>
   </div>
-
   <div class="room" id="room4">
-    <h2>🔓 Room 4: Related Rates (Spherical Balloon)</h2>
+    <h2>🔓 Room 4: Related Rates (Sand Pile)</h2>
     <div class="problem"><div class="section-title">Problem Statement</div>
-      V=(4/3)πr^3, dr/dt=0.5. (a) dV/dt formula. (b) r=6, give k in kπ. (c) numeric with π≈3.14159, nearest int.
+      Sand is being poured onto a conical pile at 5 cubic meters per minute. The pile maintains h = r. V=(1/3)πr²h. Find dh/dt when h=2 meters, rounded to 3 decimals.<br>
     </div>
     <div class="solution"><div class="section-title">Worked Solution</div>
-      dV/dt = 4πr^2 dr/dt. r=6 → 4π(36)(0.5)=72π → k=72. Numeric ≈ 226.
+      Since h = r, V = (1/3)πh³. dV/dt = πh²(dh/dt). At h=2: 5 = π(4)(dh/dt) → dh/dt = 5/(4π) ≈ 0.398 m/min.<br>
     </div>
     <div class="key"><div class="section-title">Navigation Key</div>
-      <span class="math">72226</span> → https://nemoyatpeace.github.io/ap-calc-unit4-escape/72226.html
+      <span class="math">0.398</span> → https://nemoyatpeace.github.io/ap-calc-unit4-escape/0.398.html<br>
     </div>
   </div>
-
   <div class="room" id="room5">
     <h2>🔓 Room 5: Related Rates (Coney Island)</h2>
     <div class="problem"><div class="section-title">Problem Statement</div>
-      A(t)=(0,3t), B(t)=(4t,40). D(t)=√[(4t)^2+(40-3t)^2]. Find dD/dt and evaluate at t=5 to 2 decimals.
+      A(t)=(0,3t), B(t)=(4t,40). D(t)=√[(4t)²+(40-3t)²]. Find dD/dt and evaluate at t=5 to 2 decimals.<br>
     </div>
     <div class="solution"><div class="section-title">Worked Solution</div>
-      D(t)=√(25t^2-240t+1600). D'(t)=(25t-120)/D(t). At t=5: 5/√1025 ≈ 0.1562 → 0.16 ft/s.
+      D(t)=√(25t²-240t+1600). D'(t)=(25t-120)/D(t). At t=5: 5/√1025 ≈ 0.1562 → 0.16 ft/s.<br>
     </div>
     <div class="key"><div class="section-title">Navigation Key</div>
-      Result for (d): <span class="math">0.16</span>. Proceed to page6.md (no URL concat on this page per repo).
+      <span class="math">0.16</span> → https://nemoyatpeace.github.io/ap-calc-unit4-escape/0.16.html<br>
     </div>
   </div>
-
   <div class="room" id="room6">
     <h2>🏁 Room 6: Linearization (Final)</h2>
     <div class="problem"><div class="section-title">Problem Statement</div>
-      f(x)=√(x+1). (a) f'(x). (b) Tangent at x=3. (c) L(3.2). (d) |f(3.2)-L(3.2)| to 4 decimals. Do not publish final key.
+      f(x)=√(x+1). (a) f'(x). (b) Tangent at x=3. (c) L(3.2). (d) |f(3.2)-L(3.2)| to 4 decimals. Do not publish final key.<br>
     </div>
     <div class="solution"><div class="section-title">Worked Solution</div>
-      f'(x)=1/(2√(x+1)). f(3)=2, f'(3)=1/4 → L(x)=2+0.25(x-3). L(3.2)=2.05. f(3.2)=√4.2≈2.04939 → error≈0.00061 → 0.0006.
+      f'(x)=1/(2√(x+1)). f(3)=2, f'(3)=1/4 → L(x)=2+0.25(x-3). L(3.2)=2.05. f(3.2)=√4.2≈2.04939 → error≈0.00061 → 0.0006.<br>
     </div>
     <div class="key"><div class="section-title">Navigation Key</div>
-      Final numeric (for instructor record only): <span class="math">0.0006</span>. Do not list success-page key.
+      Final numeric (for instructor record only): <span class="math">0.0006</span>. Victory page URL (do not share with students before completion).<br>
     </div>
   </div>
-
-  <div class="final-note">🎯 Instructor Summary: Keys — 187 → 6speedingup → 211 → 72226 → (Room5 result 0.16) → Final. Do not disclose the last key.</div>
+  <div class="final-note">🎯 Instructor Summary: Complete navigation path — 187 → 6speedingup → 211 → 0.398 → 0.16 → 0.0006 (victory). Do not disclose the final key before students solve Room 6.</div>
 </div>
+</body>
+</html>
