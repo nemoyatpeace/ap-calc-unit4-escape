@@ -72,7 +72,7 @@
         .progress-fill {
             height: 100%;
             background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
-            width: 66.67%;
+            width: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -84,7 +84,7 @@
         
         @keyframes fillProgress {
             0% { width: 0%; }
-            100% { width: 66.67%; }
+            100% { width: 50%; }
         }
         
         .content {
@@ -187,22 +187,6 @@
             font-family: 'Courier New', monospace;
         }
         
-        .hint-box {
-            background: #fff3cd;
-            border: 2px solid #ffc107;
-            color: #856404;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        
-        .hint-box strong {
-            color: #856404;
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-        
         ul {
             margin: 15px 0;
             padding-left: 30px;
@@ -211,11 +195,6 @@
         li {
             margin: 10px 0;
             line-height: 1.6;
-        }
-        
-        ol {
-            margin: 15px 0;
-            padding-left: 30px;
         }
         
         .footer {
@@ -240,7 +219,7 @@
         </div>
         
         <div class="progress-bar">
-            <div class="progress-fill">Room 4 of 6 (67%)</div>
+            <div class="progress-fill">3/6</div>
         </div>
         
         <div class="content">
@@ -282,25 +261,10 @@
                     <li>Part (c): The numeric value as a whole number (e.g., if 226.19, round to "226")</li>
                 </ul>
                 <div class="key-format">
-                    Example format: If part (b) = 72π and part (c) = 226, then the key is: "72226"<br>
+                    Example format: If part (b) = 48π and part (c) = 151, then the key is: "48151"<br/>
                     (Note: This is just an example - these are NOT the correct answers!)
                 </div>
-                <ol>
-                    <li>Solve part (a) to find the related rates formula</li>
-                    <li>Solve part (b) - express dV/dt in the form kπ where k is an integer</li>
-                    <li>Solve part (c) - calculate the numeric value and round to nearest integer</li>
-                    <li>Concatenate parts (b) and (c) with no spaces: [answer_b][answer_c]</li>
-                    <li>Navigate to: https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</li>
-                </ol>
-            </div>
-            
-            <div class="hint-box">
-                <strong>💡 Hints:</strong>
-                <ul>
-                    <li>Use the chain rule: dV/dt = (dV/dr) × (dr/dt)</li>
-                    <li>Find dV/dr by differentiating V = (4/3)πr³</li>
-                    <li>Substitute r = 6 and dr/dt = 0.5 into your formula</li>
-                </ul>
+                <p style="margin-top: 15px;">Once you have calculated both answers, concatenate them and navigate to: https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</p>
             </div>
         </div>
         
