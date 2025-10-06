@@ -135,6 +135,7 @@
             line-height: 1.8;
             font-size: 1.1em;
             color: #2c3e50;
+            margin: 10px 0;
         }
         
         .equation {
@@ -148,19 +149,6 @@
             color: #667eea;
             border: 2px solid #e8eaf6;
             font-family: 'Courier New', monospace;
-        }
-        
-        .part {
-            margin: 20px 0;
-            padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            border-left: 4px solid #f5576c;
-        }
-        
-        .part strong {
-            color: #f5576c;
-            font-size: 1.2em;
         }
         
         .key-box {
@@ -238,39 +226,30 @@
             <div class="divider"></div>
             
             <div class="problem-box">
-                <h3><span class="emoji">🎯</span> Challenge 4: Related Rates (Balloons)</h3>
-                <p class="problem-text"><strong>Subtopic:</strong> Related rates with volume and radius</p>
+                <h3><span class="emoji">🎯</span> Challenge 4: Related Rates</h3>
+                <p class="problem-text"><strong>Subtopic:</strong> Related rates with volume and dimensions</p>
                 <p class="problem-text" style="margin-top: 15px;"><strong>Problem:</strong></p>
-                <p class="problem-text">A spherical balloon is being inflated. The volume V of a sphere with radius r is given by:</p>
+                <p class="problem-text">Sand is being poured onto a conical pile at a constant rate of 5 cubic meters per minute. The pile maintains its conical shape, and the height and radius of the pile are always equal (h = r).</p>
                 
-                <div class="equation">V = (4/3)πr³</div>
-                <p class="problem-text">Suppose the radius is increasing at a constant rate of 0.5 cm per second.</p>
+                <p class="problem-text">Recall that the volume of a cone is given by:</p>
+                <div class="equation">V = (1/3)πr²h</div>
                 
-                <div class="part">
-                    <p><strong>(a)</strong> Use the chain rule to find dV/dt in terms of r and dr/dt.</p>
-                </div>
+                <p class="problem-text" style="margin-top: 20px;"><strong>Question:</strong> How fast is the height of the pile increasing when the pile is 2 meters high?</p>
                 
-                <div class="part">
-                    <p><strong>(b)</strong> At the instant when the radius is 6 cm, how fast is the volume increasing? Express your answer in terms of π as a coefficient (e.g., "72pi").</p>
-                </div>
-                
-                <div class="part">
-                    <p><strong>(c)</strong> Calculate the numeric value of your answer from part (b) using π ≈ 3.14159. Round to the nearest whole number of cubic cm per second.</p>
-                </div>
+                <p class="problem-text" style="margin-top: 10px; font-style: italic;">Express your answer in meters per minute, rounded to 3 decimal places.</p>
             </div>
             
             <div class="key-box">
                 <h3><span class="emoji">🔑</span> Your Navigation Key</h3>
-                <p><strong>CRITICAL:</strong> You must solve ALL parts (a), (b), and (c) to determine your navigation key.</p>
+                <p><strong>Your answer is the rate in m/min, rounded to 3 decimal places, and is your navigation key.</strong></p>
                 <div class="example">
-                    <p><strong>Example format:</strong> If part (b) = 48π and part (c) = 151, then your key would be "48151"</p>
-                    <p>(Note: This is just an example - these are NOT the correct answers!)</p>
+                    <p><strong>Example format:</strong> If your calculated rate is 1.234 m/min, then your key would be "1.234"</p>
+                    <p>(Note: This is just an example - this is NOT the correct answer!)</p>
                 </div>
                 <ol>
-                    <li>Express the coefficient of π from part (b) as a whole number.</li>
-                    <li>Express the numeric value from part (c) as a whole number.</li>
-                    <li>Concatenate those answers, no spaces or units.</li>
-                    <li>Navigate to the next page using <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_key].html</code></li>
+                    <li>Calculate dh/dt when h = 2 meters.</li>
+                    <li>Round your answer to exactly 3 decimal places.</li>
+                    <li>Navigate to the next page using <code>https://nemoyatpeace.github.io/ap-calc-unit4-escape/[your_answer].html</code></li>
                 </ol>
             </div>
         </div>
